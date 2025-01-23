@@ -1,5 +1,5 @@
 import React from 'react'
-import html from '../html.svg';
+import { ReactComponent as html} from '../public/html.svg';
 function About() {
   return (
     <div className='container m-auto h-auto flex flex-col justify-center items-center py-32'>
