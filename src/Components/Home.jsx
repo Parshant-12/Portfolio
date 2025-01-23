@@ -1,6 +1,6 @@
 import React from 'react'
 import { ReactTyped } from "react-typed";
-import photo from './src/img/photo.png';
+import photo from '../src/img/photo.png';
 function Home() {
     const onButtonClick = () => {
         const pdfUrl = "Sample.pdf";
