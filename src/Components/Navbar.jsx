@@ -1,5 +1,7 @@
 import React from 'react'
 import { useRef, useState } from 'react';
+import Menubtn from '../svg/Menu.svg'
+import crossbtn from '../svg/cross.svg'
 
 function Navbar({ scrollToSection }) {
   const ref = useRef();
@@ -8,11 +10,11 @@ function Navbar({ scrollToSection }) {
   const [isMenuOpen, setisMenuOpen] = useState(false);
   function handleMenu() {
     if (isMenuOpen) {
-      ref.current.src = "src/svg/Menu.svg"
+      ref.current.src = Menubtn;
       menuref.current.style.right = "-110%";
     }
     else {
-      ref.current.src = "src/svg/Cross.svg"
+      ref.current.src = crossbtn;
       menuref.current.style.right = 0;
     }
     setisMenuOpen(!isMenuOpen)
@@ -33,7 +35,7 @@ function Navbar({ scrollToSection }) {
       <div className='fixed h-14 w-full border-b-2 md:hidden backdrop-blur-lg z-20'>
         <h1 className='text-white text-xl py-3 px-4'>Portfolio</h1>
       </div>
-      <div onClick={handleMenu} className='md:hidden fixed right-0 py-3 px-6 cursor-pointer z-30'><img ref={ref} src="src/svg/Menu.svg" alt="menu" /></div>
+      <div onClick={handleMenu} className='md:hidden fixed right-0 py-3 px-6 cursor-pointer z-30'><img ref={ref} src={Menubtn} alt="menu" /></div>
       <div className='fixed w-[250px] h-screen right-[-110%] bg-black z-20 border-l border-white transition-all duration-500 ease-in-out' ref={menuref}>
         <ul className='flex flex-col items-center justify-center gap-10 pt-20 text-2xl text-white'>
           <li className='cursor-pointer hover:text-[#886fb8] hover:scale-110 transition-all duration-200' onClick={()=>{scrollToSection('Home')}}><a href="#Home">Home</a></li>

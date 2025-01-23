@@ -2,15 +2,6 @@ import React from 'react'
 import { ReactTyped } from "react-typed";
 import photo from '../img/photo.png';
 function Home() {
-    const onButtonClick = () => {
-        const pdfUrl = "Sample.pdf";
-        const link = document.createElement("a");
-        link.href = pdfUrl;
-        link.download = "src/Documents/Resume_0.pdf"; // specify the filename
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    };
     return (
 
         <div className='min-h-screen pt-20 pb-32 lg:pb-16 text-white flex flex-col-reverse lg:flex-row lg:justify-between container m-auto items-center'>
@@ -32,7 +23,7 @@ function Home() {
                     loop
                 ></ReactTyped></p>
                 <div className='flex gap-4 py-4 items-center justify-center lg:items-start lg:justify-start'>
-                    <button className='flex border-2 border-[#b28ff1] rounded-lg h-[46px] w-[126px] justify-center items-center bg-transparent text-[#b28ff1] text-2xl font-medium hover:bg-[#b28ff1] hover:text-[#0b0427] transition-all duration-200 ease-in-out hover:scale-105' onClick={onButtonClick}>Resume</button>
+                    <a href="https://drive.google.com/file/d/1e--w6dojkv6HlOpx7L7Zgcr2jbWUQxxo/view?usp=sharing" target='_blank'><button className='flex border-2 border-[#b28ff1] rounded-lg h-[46px] w-[126px] justify-center items-center bg-transparent text-[#b28ff1] text-2xl font-medium hover:bg-[#b28ff1] hover:text-[#0b0427] transition-all duration-200 ease-in-out hover:scale-105'>Resume</button></a>
                     <a href="https://github.com/Parshant-12" target='_blank'><button className='flex border-2 border-[#b28ff1] rounded-lg h-[46px] w-[126px] justify-center items-center bg-transparent text-[#b28ff1] text-2xl font-medium hover:bg-[#b28ff1] hover:text-[#0b0427] transition-all duration-200 ease-in-out hover:scale-105'>GitHub</button></a>
                 </div>
             </div>
