@@ -36,7 +36,7 @@ function Home() {
                 </div>
             </div>
             <div>
-                <img className='w-[450px]' src="../img/photo.png" alt="Photo" />
+                <img className='w-[450px]' src={require("./src/img/photo.png")} alt="Photo" />
                 {/* <img className='w-[350px] outline outline-4 outline-white rounded-full' src="src/img/51.png" alt="Photo" /> */}
             </div>
         </div>
