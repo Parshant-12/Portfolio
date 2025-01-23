@@ -1,5 +1,5 @@
 import React from 'react'
-
+import html from '../public/html.svg';
 function About() {
   return (
     <div className='container m-auto h-auto flex flex-col justify-center items-center py-32'>
@@ -10,7 +10,7 @@ function About() {
       </div>
       <div className='pt-12 flex justify-center items-center gap-6 flex-wrap'>
         <div className='border-2 border-[#886fb8] p-2 rounded-lg transition-all duration-200 hover:shadow-[0_0_20px_#886fb8] hover:scale-110'>
-          <img src={'../public/html.svg'} alt="html" /><p className='text-white text-center pt-1 '>HTML</p>
+          <img src={html} alt="html" /><p className='text-white text-center pt-1 '>HTML</p>
         </div>
         <div className='border-2 border-[#886fb8] pb-2 rounded-lg transition-all duration-200 hover:shadow-[0_0_20px_#886fb8] hover:scale-110'>
           <img src="src/svg/css.svg" alt="html" /><p className='text-white text-center '>CSS</p>
