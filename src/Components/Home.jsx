@@ -1,5 +1,6 @@
 import React from 'react'
 import { ReactTyped } from "react-typed";
+import photo from './src/img/photo.png';
 function Home() {
     const onButtonClick = () => {
         const pdfUrl = "Sample.pdf";
@@ -36,7 +37,7 @@ function Home() {
                 </div>
             </div>
             <div>
-                <img className='w-[450px]' src={require('../src/img/photo.png')} alt="Photo" />
+                <img className='w-[450px]' src={photo} alt="Photo" />
                 {/* <img className='w-[350px] outline outline-4 outline-white rounded-full' src="src/img/51.png" alt="Photo" /> */}
             </div>
         </div>
