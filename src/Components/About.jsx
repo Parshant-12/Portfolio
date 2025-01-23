@@ -1,5 +1,14 @@
 import React from 'react'
-
+import html from '../svg/html.svg'
+import css from '../svg/css.svg'
+import tailwind from '../svg/tailwind.svg'
+import javascript from '../svg/javascript.svg'
+import nodejs from '../svg/nodejs.svg'
+import expressjs from '../svg/expressjs.svg'
+import reactjs from '../svg/reactjs.svg'
+import nextjs from '../svg/nextjs.svg'
+import cpp from '../svg/cpp.svg'
+import python from '../svg/python.svg'
 function About() {
   return (
     <div className='container m-auto h-auto flex flex-col justify-center items-center py-32'>
@@ -10,34 +19,34 @@ function About() {
       </div>
       <div className='pt-12 flex justify-center items-center gap-6 flex-wrap'>
         <div className='border-2 border-[#886fb8] p-2 rounded-lg transition-all duration-200 hover:shadow-[0_0_20px_#886fb8] hover:scale-110'>
-          <img src="src/svg/html.svg" alt="html" /><p className='text-white text-center pt-1 '>HTML</p>
+          <img src={html} alt="html" /><p className='text-white text-center pt-1 '>HTML</p>
         </div>
         <div className='border-2 border-[#886fb8] pb-2 rounded-lg transition-all duration-200 hover:shadow-[0_0_20px_#886fb8] hover:scale-110'>
-          <img src="src/svg/css.svg" alt="html" /><p className='text-white text-center '>CSS</p>
+          <img src={css} alt="css" /><p className='text-white text-center '>CSS</p>
         </div>
         <div className='border-2 border-[#886fb8] p-2 rounded-lg transition-all duration-200 hover:shadow-[0_0_20px_#886fb8] hover:scale-110'>
-          <img src="src/svg/tailwind.svg" alt="html" /><p className='text-white text-center pt-1 '>Tailwind</p>
+          <img src={tailwind} alt="tailwind" /><p className='text-white text-center pt-1 '>Tailwind</p>
         </div>
         <div className='border-2 border-[#886fb8] p-2 rounded-lg transition-all duration-200 hover:shadow-[0_0_20px_#886fb8] hover:scale-110'>
-          <img src="src/svg/javascript.svg" alt="html" /><p className='text-white text-center pt-1 '>Javascript</p>
+          <img src={javascript} alt="js" /><p className='text-white text-center pt-1 '>Javascript</p>
         </div>
         <div className='border-2 border-[#886fb8] p-2 rounded-lg transition-all duration-200 hover:shadow-[0_0_20px_#886fb8] hover:scale-110'>
-          <img src="src/svg/nodejs.svg" alt="html" /><p className='text-white text-center pt-1 '>Node.js</p>
+          <img src={nodejs} alt="node" /><p className='text-white text-center pt-1 '>Node.js</p>
         </div>
         <div className='border-2 border-[#886fb8] p-2 rounded-lg transition-all duration-200 hover:shadow-[0_0_20px_#886fb8] hover:scale-110'>
-          <img src="src/svg/expressjs.svg" alt="html" /><p className='text-white text-center pt-1 '>Express.js</p>
+          <img src={expressjs} alt="express" /><p className='text-white text-center pt-1 '>Express.js</p>
         </div>
         <div className='border-2 border-[#886fb8] p-2 rounded-lg transition-all duration-200 hover:shadow-[0_0_20px_#886fb8] hover:scale-110'>
-          <img src="src/svg/reactjs.svg" alt="html" /><p className='text-white text-center pt-1 '>React.js</p>
+          <img src={reactjs} alt="react" /><p className='text-white text-center pt-1 '>React.js</p>
         </div>
         <div className='border-2 border-[#886fb8] p-2 rounded-lg transition-all duration-200 hover:shadow-[0_0_20px_#886fb8] hover:scale-110'>
-          <img src="src/svg/nextjs.svg" alt="html" /><p className='text-white text-center pt-1 '>Next.js</p>
+          <img src={nextjs} alt="next" /><p className='text-white text-center pt-1 '>Next.js</p>
         </div>
         <div className='border-2 border-[#886fb8] p-2 rounded-lg transition-all duration-200 hover:shadow-[0_0_20px_#886fb8] hover:scale-110'>
-          <img src="src/svg/cpp.svg" alt="html" /><p className='text-white text-center pt-1 '>C++</p>
+          <img src={cpp} alt="cpp" /><p className='text-white text-center pt-1 '>C++</p>
         </div>
         <div className='border-2 border-[#886fb8] p-2 rounded-lg transition-all duration-200 hover:shadow-[0_0_20px_#886fb8] hover:scale-110'>
-          <img src="src/svg/python.svg" alt="html" /><p className='text-white text-center pt-1 '>Python</p>
+          <img src={python} alt="python" /><p className='text-white text-center pt-1 '>Python</p>
         </div>
       </div>
     </div>
