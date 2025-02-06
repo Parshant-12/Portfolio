@@ -23,7 +23,7 @@ function Home() {
                     loop
                 ></ReactTyped></p>
                 <div className='flex gap-4 py-4 items-center justify-center lg:items-start lg:justify-start'>
-                    <a href="https://drive.google.com/file/d/1e--w6dojkv6HlOpx7L7Zgcr2jbWUQxxo/view?usp=sharing" target='_blank'><button className='flex border-2 border-[#b28ff1] rounded-lg h-[46px] w-[126px] justify-center items-center bg-transparent text-[#b28ff1] text-2xl font-medium hover:bg-[#b28ff1] hover:text-[#0b0427] transition-all duration-200 ease-in-out hover:scale-105'>Resume</button></a>
+                    <a href="https://drive.google.com/file/d/1tr2mN1owBrryENcNBF_iUcSfYrccsmUH/view?usp=sharing" target='_blank'><button className='flex border-2 border-[#b28ff1] rounded-lg h-[46px] w-[126px] justify-center items-center bg-transparent text-[#b28ff1] text-2xl font-medium hover:bg-[#b28ff1] hover:text-[#0b0427] transition-all duration-200 ease-in-out hover:scale-105'>Resume</button></a>
                     <a href="https://github.com/Parshant-12" target='_blank'><button className='flex border-2 border-[#b28ff1] rounded-lg h-[46px] w-[126px] justify-center items-center bg-transparent text-[#b28ff1] text-2xl font-medium hover:bg-[#b28ff1] hover:text-[#0b0427] transition-all duration-200 ease-in-out hover:scale-105'>GitHub</button></a>
                 </div>
             </div>
