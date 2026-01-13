@@ -1,5 +1,6 @@
 import React from 'react'
 import { ReactTyped } from "react-typed";
+import photo from "../img/photo.png";
 function Home() {
     const onButtonClick = () => {
         const pdfUrl = "https://drive.google.com/file/d/1fSzP3lpK9zqMNEIdNw2US4JYeCWSHGpB/view?usp=sharing";
@@ -33,11 +34,18 @@ function Home() {
                 </p>
                 <div className='flex gap-4 py-4 items-center justify-center lg:items-start lg:justify-start'>
                     <button className='flex border-2 border-[#b28ff1] rounded-lg h-[46px] w-[126px] justify-center items-center bg-transparent text-[#b28ff1] text-2xl font-medium hover:bg-[#b28ff1] hover:text-[#0b0427] transition-all duration-200 ease-in-out hover:scale-105' onClick={onButtonClick}>Resume</button>
-                    <button className='flex border-2 border-[#b28ff1] rounded-lg h-[46px] w-[126px] justify-center items-center bg-transparent text-[#b28ff1] text-2xl font-medium hover:bg-[#b28ff1] hover:text-[#0b0427] transition-all duration-200 ease-in-out hover:scale-105'>GitHub</button>
+                    <a
+                        className='flex border-2 border-[#b28ff1] rounded-lg h-[46px] w-[126px] justify-center items-center bg-transparent text-[#b28ff1] text-2xl font-medium hover:bg-[#b28ff1] hover:text-[#0b0427] transition-all duration-200 ease-in-out hover:scale-105'
+                        href='https://github.com/Parshant-12'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
+                        GitHub
+                    </a>
                 </div>
             </div>
             <div>
-                <img className='w-[450px]' src="src/img/photo.png" alt="Photo" />
+                <img className='w-[450px]' src={photo} alt="Photo" />
                 {/* <img className='w-[350px] outline outline-4 outline-white rounded-full' src="src/img/51.png" alt="Photo" /> */}
             </div>
         </div>
