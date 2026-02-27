@@ -1,4 +1,3 @@
-are you sure that you doesnt break or change any other thing rather than icon in this code:
 import React from 'react'
 import { useRef, useState } from 'react';
 
@@ -13,7 +12,7 @@ function Navbar({ scrollToSection }) {
       menuref.current.style.right = "-110%";
     }
     else {
-      ref.current.src = "src/svg/Cross.svg"
+      ref.current.src = "src/svg/cross.svg"
       menuref.current.style.right = 0;
     }
     setisMenuOpen(!isMenuOpen)
