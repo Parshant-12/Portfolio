@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
 
-// IMPORTANT: Replace these paths with your actual file locations
-import menuIcon from '../svg/Menu.svg'; 
-import crossIcon from '../svg/Cross.svg';
-
 function Navbar({ scrollToSection }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -13,7 +9,7 @@ function Navbar({ scrollToSection }) {
 
   const handleLinkClick = (section) => {
     scrollToSection(section);
-    setIsMenuOpen(false); // Closes the mobile menu after clicking
+    setIsMenuOpen(false); 
   };
 
   return (
@@ -36,13 +32,10 @@ function Navbar({ scrollToSection }) {
       </div>
 
       {/* Mobile Hamburger Toggle */}
-      <div 
-        onClick={toggleMenu} 
-        className='md:hidden fixed right-0 py-3 px-6 cursor-pointer z-30'
-      >
+      <div onClick={toggleMenu} className='md:hidden fixed right-0 py-3 px-6 cursor-pointer z-30'>
         <img 
-          src={isMenuOpen ? crossIcon : menuIcon} 
-          alt="toggle menu" 
+          src={isMenuOpen ? "/Cross.svg" : "/Menu.svg"} 
+          alt="toggle" 
           className="w-8 h-8" 
         />
       </div>
@@ -50,11 +43,11 @@ function Navbar({ scrollToSection }) {
       {/* Slide-out Mobile Menu */}
       <div className={`fixed w-[250px] h-screen bg-black z-20 border-l border-white transition-all duration-500 ease-in-out ${isMenuOpen ? 'right-0' : '-right-full'}`}>
         <ul className='flex flex-col items-center justify-center gap-10 pt-20 text-2xl text-white'>
-          <li className='cursor-pointer hover:text-[#886fb8] hover:scale-110 transition-all duration-200' onClick={() => handleLinkClick('Home')}>Home</li>
-          <li className='cursor-pointer hover:text-[#886fb8] hover:scale-110 transition-all duration-200' onClick={() => handleLinkClick('About')}>About</li>
-          <li className='cursor-pointer hover:text-[#886fb8] hover:scale-110 transition-all duration-200' onClick={() => handleLinkClick('Services')}>Services</li>
-          <li className='cursor-pointer hover:text-[#886fb8] hover:scale-110 transition-all duration-200' onClick={() => handleLinkClick('Projects')}>Projects</li>
-          <li className='cursor-pointer hover:text-[#886fb8] hover:scale-110 transition-all duration-200' onClick={() => handleLinkClick('Contacts')}>Contacts</li>
+          <li className='cursor-pointer hover:text-[#886fb8]' onClick={() => handleLinkClick('Home')}>Home</li>
+          <li className='cursor-pointer hover:text-[#886fb8]' onClick={() => handleLinkClick('About')}>About</li>
+          <li className='cursor-pointer hover:text-[#886fb8]' onClick={() => handleLinkClick('Services')}>Services</li>
+          <li className='cursor-pointer hover:text-[#886fb8]' onClick={() => handleLinkClick('Projects')}>Projects</li>
+          <li className='cursor-pointer hover:text-[#886fb8]' onClick={() => handleLinkClick('Contacts')}>Contacts</li>
         </ul>
       </div>
     </>
