@@ -1,4 +1,7 @@
 import React from 'react'
+import safekey from '../img/safekey.png'
+import musicspace from '../img/musicspace.png'
+import client from '../img/clientsportfolio.png'
 
 function Projects() {
     return (
@@ -8,7 +11,7 @@ function Projects() {
             <div className='flex justify-center items-center gap-20 pb-10 pt-16 flex-wrap'>
                 <div className='bg-[#1f192b] border-2 border-[#886fb8] sm:w-[420px] w-[300px] rounded-2xl flex flex-col items-center text-center min-h-[580px] transition-all duration-500 hover:shadow-[0_0_30px_#886fb8] hover:scale-105'>
                     <div className='p-4 overflow-hidden '>
-                        <img className='rounded-lg object-cover' src="src/img/safekey.png" alt="SafeKEY Logo" />
+                        <img className='rounded-lg object-cover' src={safekey} alt="SafeKEY Logo" />
                     </div>
                     <h1 className='text-3xl font-semibold pt-3 text-[#886fb8]'>&lt;SafeKEY/&gt;</h1>
                     <p className='text-lg text-gray-500 px-6'>
@@ -22,7 +25,7 @@ function Projects() {
                 </div>
                 <div className='bg-[#1f192b] border-2 border-[#886fb8] sm:w-[420px] w-[300px] rounded-2xl flex flex-col items-center text-center min-h-[580px] transition-all duration-500 hover:shadow-[0_0_30px_#886fb8] hover:scale-105'>
                     <div className='p-4 overflow-hidden '>
-                        <img className='rounded-lg object-cover' src="src/img/musicspace.png" alt="SafeKEY Logo" />
+                        <img className='rounded-lg object-cover' src={musicspace} alt="SafeKEY Logo" />
                     </div>
                     <h1 className='text-3xl font-semibold pt-3 text-[#886fb8]'>MusicSpace</h1>
                     <p className='text-lg text-gray-500 px-6'>
@@ -40,7 +43,7 @@ function Projects() {
                 </div>
                 <div className='bg-[#1f192b] border-2 border-[#886fb8] sm:w-[420px] w-[300px] rounded-2xl flex flex-col items-center text-center min-h-[580px] transition-all duration-500 hover:shadow-[0_0_30px_#886fb8] hover:scale-105'>
                     <div className='p-4 overflow-hidden '>
-                        <img className='rounded-lg object-cover' src="src/img/clientsportfolio.png" alt="SafeKEY Logo" />
+                        <img className='rounded-lg object-cover' src={client} alt="SafeKEY Logo" />
                     </div>
                     <h1 className='text-3xl font-semibold pt-3 text-[#886fb8]'>Client's Portfolio</h1>
                     <p className='text-lg text-gray-500 px-6'>

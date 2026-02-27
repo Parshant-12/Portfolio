@@ -1,4 +1,7 @@
 import React from 'react'
+import webdev from '../img/web-development.png'
+import backend from '../img/backend-dev-Photoroom.png'
+import portfolio from '../img/portfolio.png'
 
 function Services() {
   return (
@@ -8,17 +11,17 @@ function Services() {
       <p className='text-gray-400 text-lg py-2'>What i will do for you</p>
       <div className='flex justify-center items-center gap-20 py-10 flex-wrap'>
         <div className='border-2 border-[#886fb8] w-[290px] rounded-2xl flex flex-col items-center px-6 py-6 text-center min-h-[470px] transition-all duration-300 hover:shadow-[0_0_20px_#886fb8] hover:scale-105 bg-[#1f192b]'>
-          <img className='w-52' src="src/img/web-development.png" alt="frontend" />
+          <img className='w-52' src={webdev} alt="frontend" />
           <h1 className='text-3xl py-3 text-[#886fb8]'>Frontend Dev</h1>
           <p className='text-lg text-gray-400'>I design responsive and user-friendly websites using modern technologies. My work ensures seamless experiences across all devices.</p>
         </div>
         <div className='border-2 border-[#886fb8] w-[290px] rounded-2xl flex flex-col items-center px-6 py-6 text-center min-h-[470px] transition-all duration-300 hover:shadow-[0_0_20px_#886fb8] hover:scale-105 bg-[#1f192b]'>
-          <img className='w-44' src="src/img/backend-dev-Photoroom.png" alt="backend" />
+          <img className='w-44' src={backend} alt="backend" />
           <h1 className='text-3xl py-3 text-[#886fb8]'>Backend Dev</h1>
           <p className='text-lg text-gray-400'>I build backend systems using Node and Express.js with efficient database management through MongoDB, I ensure your applications are fast and reliable.</p>
         </div>
         <div className='border-2 border-[#886fb8] w-[290px] rounded-2xl flex flex-col items-center px-6 py-6 text-center min-h-[470px] transition-all duration-300 hover:shadow-[0_0_20px_#886fb8] hover:scale-105 bg-[#1f192b]'>
-          <img className='w-32' src="src/img/portfolio.png" alt="portfolio" />
+          <img className='w-32' src={portfolio} alt="portfolio" />
           <h1 className='text-3xl py-3 text-[#886fb8]'>Portfolio Websites</h1>
           <p className='text-lg text-gray-400'>Looking for a personal portfolio or business website? I create fast, efficient, and modern single-page or multi-page websites customized to your needs at an affordable cost.</p>
         </div>

@@ -1,5 +1,7 @@
 import React from 'react'
 import { useRef, useState } from 'react';
+import MenuIcon from "../svg/Menu.svg";
+import CrossIcon from "../svg/cross.svg";
 
 function Navbar({ scrollToSection }) {
   const ref = useRef();
@@ -8,11 +10,11 @@ function Navbar({ scrollToSection }) {
   const [isMenuOpen, setisMenuOpen] = useState(false);
   function handleMenu() {
     if (isMenuOpen) {
-      ref.current.src = "src/svg/Menu.svg"
+      ref.current.src = MenuIcon;
       menuref.current.style.right = "-110%";
     }
     else {
-      ref.current.src = "src/svg/Cross.svg"
+      ref.current.src = CrossIcon;
       menuref.current.style.right = 0;
     }
     setisMenuOpen(!isMenuOpen)
